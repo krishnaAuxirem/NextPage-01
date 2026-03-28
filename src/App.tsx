@@ -47,6 +47,7 @@ import ContentManagement from "./pages/dashboard/ContentManagement";
 import Moderation from "./pages/dashboard/Moderation";
 import AdminAnalytics from "./pages/dashboard/AdminAnalytics";
 import AuthorProfile from './pages/AuthorProfile';
+import CookiesPolicy from './pages/CookiesPolicy';
 import ReadingClubs from './pages/ReadingClubs';
 
 const queryClient = new QueryClient();
@@ -93,6 +94,7 @@ const App = () => (
                 <Route path="/content/:id" element={<MainLayout><ContentDetail /></MainLayout>} />
                 <Route path="/author/:id" element={<MainLayout><AuthorProfile /></MainLayout>} />
                 <Route path="/reading-clubs" element={<MainLayout><ReadingClubs /></MainLayout>} />
+                <Route path="/cookies" element={<MainLayout><CookiesPolicy /></MainLayout>} />
 
                 {/* Auth Routes (No Layout) */}
                 <Route path="/login" element={<Login />} />
